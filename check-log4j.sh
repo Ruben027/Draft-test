@@ -3,9 +3,8 @@ Check_1="$(find / -name 'log4j*')"
 Check_10="$(egrep -i -r '\$\{jndi:(ldap[s]?|rmi|dns):/[^\n]+' /var/log)"
 Check_11="$(find /var/log -name \*.gz -print0 | xargs -0 zgrep -E -i '\$\{jndi:(ldap[s]?|rmi|dns):/[^\n]+')"
 
-
 echo "---------------------------------";
-echo -e "[Check 1/10]Check if log4j is installed\n"
+echo -e "[Check 1]Check if log4j is installed\n"
 if [ "$Check_1" ];
  then
   echo -e "[Warming] Log4j is installed you can check in the files:\n"
