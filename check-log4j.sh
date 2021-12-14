@@ -12,7 +12,7 @@ if [ "$Check_1" ];
   echo -e "\n"
 ###
   case "$Check_1" in
-   *"2.16"*)
+   *"2.11"*)
     echo -e "Version 2.16, is OK"
    ;;
    *"2.15"*)
